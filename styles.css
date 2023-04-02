@@ -1,0 +1,155 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'poppins', sans-serif;
+}
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+}
+
+body {
+  height: 100vh;
+  background-color: #16181d;
+  overflow-x: hidden;
+}
+
+.header {
+  position: relative;
+  height: 10rem;
+  padding: 0 5rem;
+}
+
+.navbar .logo {
+  width: auto;
+  height: 2.5rem;
+}
+
+.navbar {
+  width: 100%;
+  height: 60px;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navlist {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+}
+
+.navlist a {
+  text-decoration: none;
+  color: #43464c;
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+.navlist a:link,
+.navlist a:visited {
+  transition: all 0.5s;
+}
+
+.navlist a:hover,
+.navlist a:active {
+  color: #de8484;
+  transition: 0.5s;
+}
+
+#socials {
+  text-decoration: none;
+  color: #43464c;
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+#socials:link,
+#socials:visited {
+  transition: all 0.5s;
+}
+
+#socials:hover,
+#socials:active {
+  color: #de8484;
+  transition: 0.5s;
+}
+
+#mobilenav {
+  display: none;
+  background: transparent;
+  cursor: pointer;
+}
+
+#mobilenav .navico {
+  width: 2.5rem;
+  height: 2.5rem;
+  color: #43464c;
+}
+
+#mobilenav .navico[name = "close-outline"] {
+  display: none;
+}
+
+/* MOBILE CSS */
+@media (max-width: 62em) {
+
+   .navlist {
+    /* display: none; */
+    width: 100%;
+    height: 100vh;
+    border-top: 2px white;
+    background-color: #16181d;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    display: flex;
+    padding-top: 173px;
+    /* justify-content: center; */
+    align-items: center;
+    flex-direction: column;
+    gap: 3.5rem;
+    
+    transform: translateX(100%);
+    transition: all 0.5s linear;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+
+  }
+
+  .navlist a {
+    font-size: 2rem;
+    font-weight: 500;
+    text-transform: uppercase;
+  }
+
+  #socials {
+    display: none;
+  }
+
+  #mobilenav {
+    display: flex;
+    z-index: 999;
+    /* border: 1.9px solid #43464c; */
+  }
+
+  .active .navlist {
+    transform: translateX(0);
+    opacity: 1;
+    visibility:  visible;
+    pointer-events: auto;
+  }
+
+  .active #mobilenav .navico[name = "menu-outline"]{
+    display: none;
+  }
+
+  .active #mobilenav .navico[name = "close-outline"]{
+    display: flex;
+  }
+}
