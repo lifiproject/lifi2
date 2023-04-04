@@ -179,6 +179,7 @@ body {
 .home h1 {
   /* background-color: #3E4248; */
   color: var(--text);
+  width: 38rem;
   font-size: 10rem;
   text-align: center;
   letter-spacing: 0.5rem;
@@ -188,8 +189,8 @@ body {
   margin: 0 auto; /* Gives that scrolling effect as the typing happens */
   letter-spacing: 0.5rem; /* Adjust as needed */
   animation: 
-    typing 3.5s steps(15, end),
-    blink-caret .5s step-end infinite;
+    typing 3.5s steps(30, end),
+    blink-caret .95s step-start infinite;
 }
 
 /* The typing effect */
