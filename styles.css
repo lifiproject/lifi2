@@ -7,14 +7,29 @@
   --inactive: #3E4248;
 }
 
+@font-face {
+  font-family: 'Apercu-B';
+  src: url("fonts/Apercu\ Bold.otf");
+}
+
+@font-face {
+  font-family: 'Apercu-M';
+  src: url("fonts/Apercu\ Medium.otf");
+}
+
+@font-face {
+  font-family: 'Apercu-R';
+  src: url("fonts/Apercu\ Light.otf");
+}
+
+
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
   scroll-behavior: smooth;
   background-color: var(--bg);
-  /* font-family: 'poppins', sans-serif; */
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Apercu-B', sans-serif;
 }
 
 html {
@@ -24,7 +39,6 @@ html {
 
 body {
   height: 100vh;
-  /* background-color: #0B0C10; */
   overflow-x: hidden;
 }
 
@@ -39,11 +53,6 @@ body {
   z-index: 1;
 }
 
-/* .navbar .logo {
-  width: auto;
-  height: 2.5rem;
-} */
-
 .navbar .logo {
   font-family: 'Climate Crisis', cursive;
   font-size: 25px;
@@ -57,7 +66,6 @@ body {
   font-size: 25px;
   font-weight: 400;
   color: var(--navbartxt);
-  /* background-color: var(--bgnav); */
 }
 
 .navbar {
@@ -110,7 +118,7 @@ body {
   background-color: var(--bgnav);
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 2rem;
   justify-content: space-between;
 }
 
@@ -153,46 +161,40 @@ body {
 
 /* ---------- HERO SECTION ---------- */
 .home{
-  /* left: 50%; */
-  padding: 9.6rem 0;
-  height: 60vh;
+  margin-left: 20rem;
+  padding-top: 60;
+  height: 100vh;
   display: flex;
-  justify-content: center;
   align-items: center;
 }
 
 .hero h5 {
-  color: #31363F;
-  font-size: 22px;
+  color: var(--inactive);
+  font-size: 2rem;
 }
 .hero h1 {
-  /* color: #fff; */
-  color: #ccc9c9;
-  margin: 20px 0 20px;
-  font-size: 75px;
-  font-weight: 550;
+  color: var(--text);
+  margin: 1.3rem 0 1.3rem;
+  font-size: 10rem;
 }
 
 .hero h3 {
-  /* color: aliceblue; */
-  color: #aaa;
-  font-weight: normal;
+  color: var(--navbartxt);
+  font-size: 1.9rem;
+  font-family: 'Apercu-R', sans-serif;
 }
 
 
 /* ---------- ABOUT SECTION ---------- */
-.about {
+/* .about {
   width: 100%;
   padding: 78px 0;
-  /* background-color: #16181d; */
-  /* background-color: #15171d; */
 }
 
 .about img {
   height: auto;
   width: 500px;
   margin-top: 27px;
-  /* opacity: 0.75; */
 }
 
 .about-text {
@@ -200,7 +202,6 @@ body {
 }
 
 .about-text h2 {
-  /* color: #fff; */
   color: #333;
   font-size: 75px;
   font-weight: 700;
@@ -218,13 +219,10 @@ body {
 
 .about-text p {
   width: 700px;
-  /* color: #fff; */
   color: #aaa;
   letter-spacing: 1px;
   line-height: 27px;
   font-weight: normal;
-  /* font-size: 18px; */
-  /* margin-bottom: 45px; */
 }
 .about .main {
   width: 1130px;
@@ -233,7 +231,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-around;
-}
+} */
 
 
 /* ---------- MOBILE CSS ---------- */
@@ -242,14 +240,6 @@ body {
   .header {
     padding: 0 2rem;
   }
-
-  /* .navbar .logo {
-    font-size: 2rem;
-  }
-
-  .navbar .logo span {
-    font-size: 2rem;
-  } */
 
   .navlist {
     /* display: none; */
@@ -262,7 +252,6 @@ body {
     left: 0;
     display: flex;
     padding-top: 173px;
-    /* justify-content: center; */
     align-items: center;
     flex-direction: column;
     gap: 3.5rem;
@@ -283,8 +272,6 @@ body {
 
   .navlist a {
     font-size: 2rem;
-    /* font-weight: 500;
-    text-transform: lowercase; */
   }
 
   .icos {
@@ -294,7 +281,6 @@ body {
   #mobilenav {
     display: flex;
     z-index: 999;
-    /* border: 1.9px solid #43464c; */
   }
 
   .active .navlist {
@@ -313,10 +299,29 @@ body {
   }
 
   .home{
-    padding: 9.6rem 0;
-    height: 60vh;
+    margin-left: 5rem;
+    margin-right: 5rem;
+    padding-top: 60;
+    height: 100vh;
     display: flex;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
+  }
+  
+  .hero h5 {
+    color: var(--inactive);
+    font-size: 1.5rem;
+    /* align-items: center; */
+  }
+  .hero h1 {
+    color: var(--text);
+    margin: 1.3rem 0 1.3rem;
+    font-size: 3rem;
+  }
+  
+  .hero h3 {
+    color: var(--navbartxt);
+    font-size: 1.3rem;
+    font-family: 'Apercu-R', sans-serif;
   }
 }
