@@ -179,7 +179,6 @@ body {
 .home h1 {
   /* background-color: #3E4248; */
   color: var(--text);
-  width: 38rem;
   font-size: 10rem;
   text-align: center;
   letter-spacing: 0.5rem;
