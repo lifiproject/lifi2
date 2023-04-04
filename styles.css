@@ -356,6 +356,7 @@ body {
     margin-left: 5rem;
     margin-right: 5rem;
     margin-top: 10rem;
+    height: 80vh;
     justify-content: center;
     /* background-color: green; */
   }
