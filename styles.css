@@ -170,6 +170,28 @@ body {
   text-align: center;
 }
 
+@keyframes slide-in {
+  from {
+    transform: translateY(30%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0%);
+    opacity: 1;
+  }
+}
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.home h5, h3 {
+  animation: slide-in 1s ease-in forwards, fade-in 1.5s ease-in forwards;
+}
+
 .hero h5 {
   color: var(--inactive);
   font-size: 2rem;
@@ -188,7 +210,8 @@ body {
   letter-spacing: 0.3rem; /* Adjust as needed */
   animation: 
     typing 2.0s steps(35, end),
-    blink-caret .95s step-start infinite;
+    blink-caret .95s step-start infinite,
+    slide-in 1s ease-in forwards, fade-in 1.5s ease-in forwards;
 }
 
 /* The typing effect */
@@ -282,7 +305,6 @@ body {
     align-items: center;
     flex-direction: column;
     gap: 3.5rem;
-
     transform: translateX(100%);
     transition: all 0.5s linear;
     opacity: 0;
