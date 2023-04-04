@@ -176,13 +176,11 @@ body {
   color: var(--text);
   margin: 1.3rem 0 1.3rem;
   font-size: 10rem;
-  text-align: center;
 }
 
 .hero h3 {
   color: var(--navbartxt);
   font-size: 1.9rem;
-  text-align: center;
   font-family: 'Apercu-R', sans-serif;
 }
 
@@ -317,6 +315,7 @@ body {
     color: var(--text);
     font-size: 4.7rem;
     margin-bottom: 5rem;
+    text-align: center;
   }
   
   .hero h3 br {
@@ -328,5 +327,6 @@ body {
     color: var(--navbartxt);
     font-size: 2.5rem;
     font-family: 'Apercu-R', sans-serif;
+    text-align: center;
   }
 }
