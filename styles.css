@@ -171,16 +171,19 @@ body {
 .hero h5 {
   color: var(--inactive);
   font-size: 2rem;
+  text-align: center;
 }
 .hero h1 {
   color: var(--text);
   margin: 1.3rem 0 1.3rem;
   font-size: 10rem;
+  text-align: center;
 }
 
 .hero h3 {
   color: var(--navbartxt);
   font-size: 1.9rem;
+  text-align: center;
   font-family: 'Apercu-R', sans-serif;
 }
 
