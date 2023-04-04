@@ -355,7 +355,7 @@ body {
   .home{
     margin-left: 5rem;
     margin-right: 5rem;
-    height: 70vh;
+    height: auto;
     margin-top: 5rem;
     justify-content: center;
     /* background-color: green; */
