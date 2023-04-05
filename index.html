@@ -29,7 +29,7 @@
       <div class="icos">
         <a href="https://www.instagram.com/ajeenkyadypatiluniversity/related_profiles/?hl=en" id="socials"><ion-icon name="logo-instagram"></ion-icon></a>
         <a href="" id="socials"><ion-icon name="logo-linkedin"></ion-icon></a>
-        <a href="" id="socials"><ion-icon name="logo-github"></ion-icon></a>
+        <a href="https://github.com/lifiproject/lifi2" id="socials"><ion-icon name="logo-github"></ion-icon></a>
       </div>
       <div id="mobilenav">
         <ion-icon name="menu-outline" class="navico"></ion-icon>
@@ -44,9 +44,9 @@
   <!-- <main> -->
     <section class="home" id="home">
       <div class="hero">
-        <h5>Welcome, to my project on</h5>
-        <h1>Light Fidelity.</h1>
-        <h3>LiFi is a wireless communication technology that uses light to transmit data. Unlike traditional wireless<br> communication technologies like Wi-Fi and Bluetooth that use radio waves to transmit data, LiFi uses light-emitting<br>diodes (LEDs) to transmit information. LiFi has several advantages over traditional wireless<br> communication technologies. Continue to read to find more about LiFi.</h3>
+        <h5 class="welcm-msg">Welcome, to my project on</h5>
+        <h1 class="hero-title" id="typing-header">Light Fidelity.</h1>
+        <h3 class="content">LiFi is a wireless communication technology that uses light to transmit data. Unlike traditional wireless<br> communication technologies like Wi-Fi and Bluetooth that use radio waves to transmit data, LiFi uses light-emitting<br> diodes (LEDs) to transmit information. LiFi has several advantages over traditional wireless<br> communication technologies. Continue to read to find more about LiFi.</h3>
       </div>
     </section>
   <!-- </main> -->
@@ -80,5 +80,20 @@
   <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
   <script src="main.js"></script>
+
+  <script src="https://unpkg.com/scrollreveal@4.0.5/dist/scrollreveal.min.js"></script>
+  <script>
+    ScrollReveal({
+      reset: true,
+      distance:'60px',
+      duration: 2500,
+      delay: 400
+    });
+
+    ScrollReveal().reveal('.welcm-msg', {delay:500, origin: 'right'});
+    ScrollReveal().reveal('.hero-title', {delay:500, origin: 'left'});
+    ScrollReveal().reveal('.content', {delay:2500, origin: 'bottom'});
+  </script>
+
 </body>
 </html>
