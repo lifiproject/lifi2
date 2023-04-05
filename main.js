@@ -30,15 +30,16 @@ for (var i = 0; i < links.length; i++) {
 
 // Add a delay before starting the animation for each element
 setTimeout(function() {
-  document.querySelector('h5').style.animationDelay = '0.5s';
+  document.querySelector('h5').style.animationDelay = '1s';
   document.querySelector('h5').style.opacity = 1;
-}, 500); // 1s delay for h5 element
+}, 1000); // 1s delay for h5 element
 
 setTimeout(function() {
+  // document.querySelector('h5').style.animationDelay = '2s';
   document.querySelector('h1').style.opacity = 1;
 }, 500);
 
 setTimeout(function() {
-  document.querySelector('h3').style.animationDelay = '0.7s';
+  document.querySelector('h3').style.animationDelay = '5s';
   document.querySelector('h3').style.opacity = 1;
-}, 700); // 3s delay for h3 element
+}, 6500); // 3s delay for h3 element
