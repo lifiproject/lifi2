@@ -43,7 +43,7 @@
   <section class="home" id="home">
     <div class="hero">
       <h5 class="welcome-msg">Welcome, to my project on</h5>
-      <h1 class="hero-title" id="typing-header">Light Fidelity.</h1>
+      <h1 class="hero-title" id="typing-header"></h1>
       <h3 class="hero-content">LiFi is a wireless communication technology that uses light to transmit data. Unlike traditional wireless<br> communication technologies like Wi-Fi and Bluetooth that use radio waves to transmit data, LiFi uses light-emitting<br> diodes (LEDs) to transmit information. LiFi has several advantages over traditional wireless<br> communication technologies. Continue to read to find more about LiFi.</h3>
     </div>
   </section>
@@ -69,11 +69,12 @@
   <!-- JS -->
   <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+  <script src="https://unpkg.com/typeit@8.7.1/dist/index.umd.js"></script>
   <script src="main.js"></script>
   <script src="https://unpkg.com/scrollreveal@4.0.5/dist/scrollreveal.min.js"></script>
   <script>
     const sr = ScrollReveal({
-      reset: false,
+      reset: true,
       distance:'60px',
       duration: 2500,
       delay: 400
@@ -81,12 +82,22 @@
 
     // HERO
     sr.reveal('.welcome-msg', {delay:500, origin: 'right'});
-    sr.reveal('.hero-title', {delay:500, origin: 'left'});
+    // sr.reveal('.hero-title', {delay:500, origin: 'left'});
     sr.reveal('.hero-content', {delay:2500, origin: 'bottom'});
     // ABOUT
     sr.reveal('.main-title', {delay:500, origin: 'left'});
     sr.reveal('.image', {delay:1500, origin: 'bottom'});
     sr.reveal('.content', {delay:1500, origin: 'right'});
+    
+    new TypeIt('#typing-header', {
+    speed: 70,
+    lifeLike: true,
+    waitUntilVisible: false
+    })
+    .pause(2500)
+    .type("Light Fidelity.")
+    .go();
+
   </script>
 
 </body>
