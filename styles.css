@@ -212,13 +212,11 @@ body {
   font-size: 10rem;
   position: relative;
   letter-spacing: 5px;
-  /* width: max-content; */
   color: var(--text);
-  /* background-color: #de8484; */
-   opacity: 0;
+   /* opacity: 0; */
 }
 
-.home h1::before,
+/* .home h1::before,
 .home h1::after {
   content: "";
   position: absolute;
@@ -240,7 +238,7 @@ body {
   animation: typewriter var(--typewriterSpeed)
       steps(var(--typewriterCharacters)) 1s forwards,
     blink 750ms steps(var(--typewriterCharacters)) infinite;
-}
+} */
 
 .hero h3 {
   color: var(--navbartxt);
