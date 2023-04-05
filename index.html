@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LiFi - Light Fidelity</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Climate+Crisis&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- NAVBAR SETTINGS -->
+  <header class="header">
+    <nav class="navbar">
+      <h2 class="logo">LI<span>-FI</span>.</h2>
+      <ul class="navlist">
+        <li><a id="active" class="changeable" href="#home">Home</a></li>
+        <li><a class="changeable" href="#about">About</a></li>
+        <li><a class="changeable" href="#about2">Working</a></li>
+        <li><a class="changeable" href="#">Uses</a></li>
+        <li class="lsticos"> <a href="https://www.instagram.com/ajeenkyadypatiluniversity/related_profiles/?hl=en" id="socials"><ion-icon name="logo-instagram"></ion-icon></a>
+          <a href="" id="socials"><ion-icon name="logo-linkedin"></ion-icon></a>
+          <a href="" id="socials"><ion-icon name="logo-github"></ion-icon></a></li>
+      </ul>
+      <div class="icos">
+        <a href="https://www.instagram.com/ajeenkyadypatiluniversity/related_profiles/?hl=en" id="socials"><ion-icon name="logo-instagram"></ion-icon></a>
+        <a href="" id="socials"><ion-icon name="logo-linkedin"></ion-icon></a>
+        <a href="https://github.com/lifiproject/lifi2" id="socials"><ion-icon name="logo-github"></ion-icon></a>
+      </div>
+      <div id="mobilenav">
+        <ion-icon name="menu-outline" class="navico"></ion-icon>
+        <ion-icon name="close-outline" class="navico"></ion-icon>
+      </div>
+    </nav>
+  </div>
+  </header>
+
+
+  <!-- LANDING PAGE -->
+  <section class="home" id="home">
+    <div class="hero">
+      <h5 class="welcome-msg">Welcome, to my project on</h5>
+      <h1 class="hero-title" id="typing-header">Light Fidelity.</h1>
+      <h3 class="hero-content">LiFi is a wireless communication technology that uses light to transmit data. Unlike traditional wireless<br> communication technologies like Wi-Fi and Bluetooth that use radio waves to transmit data, LiFi uses light-emitting<br> diodes (LEDs) to transmit information. LiFi has several advantages over traditional wireless<br> communication technologies. Continue to read to find more about LiFi.</h3>
+    </div>
+  </section>
+
+
+  <!-- ABOUT PAGE -->
+  <section class="about" id="about">
+    <div class="container">
+      <h2 class="main-title">Discovering Li-Fi</h2>
+      <div class="content">
+        <div class="image">
+          <img src="images/about-img.png" alt="lifi related image">
+        </div>
+        <div class="text-box">
+          <!-- <h3>Lorem Ipsum</h3> -->
+          <p>Li-Fi is a wireless communication technology which utilizes light to transmit data and position between devices. The term was first introduced by Harald Haas during a 2011 TED Global talk in Edinburgh. Li-Fi is a light communication system that is capable of transmitting data at high speeds over the visible light, ultraviolet, and infrared spectrums. In its present state, only LED lamps can be used for the transmission of data in visible light. In terms of its end user, the technology is similar to Wi-Fi.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- JS -->
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+  <script src="main.js"></script>
+  <script src="https://unpkg.com/scrollreveal@4.0.5/dist/scrollreveal.min.js"></script>
+  <script>
+    const sr_hero = ScrollReveal({
+      reset: false,
+      distance:'60px',
+      duration: 2500,
+      delay: 400
+    });
+    sr_hero.reveal('.welcome-msg', {delay:500, origin: 'right'});
+    sr_hero.reveal('.hero-title', {delay:500, origin: 'left'});
+    sr_hero.reveal('.hero-content', {delay:2500, origin: 'bottom'});
+
+    const sr_about = ScrollReveal({
+      reset: true,
+      distance:'60px',
+      duration: 2500,
+      delay: 100
+    });
+    sr_about.reveal('.main-title', {delay:500, origin: 'left'});
+    sr_about.reveal('.image', {delay:500, origin: 'bottom'});
+    sr_about.reveal('.content', {delay:500, origin: 'right'});
+  </script>
+
+</body>
+</html>
