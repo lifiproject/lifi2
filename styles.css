@@ -5,6 +5,9 @@
   --dulltxt: #C5C6C7;
   --navbartxt: #45A29E;
   --inactive: #3E4248;
+
+  --typewriterSpeed: 1s;
+  --typewriterCharacters: 15;
 }
 
 @font-face {
@@ -168,7 +171,6 @@ body {
   justify-content: center;
   align-items: center;
   text-align: center;
-  /* animation-fill-mode: forwards; */
 }
 
 @keyframes slide-up {
@@ -182,16 +184,16 @@ body {
   }
 }
 
-/* The typing effect */
-@keyframes typing {
-  from { width: 0 }
-  to { width: 100% }
+@keyframes typewriter {
+  to {
+    left: 87%;
+  }
 }
 
-/* The typewriter cursor effect */
-@keyframes blink-caret {
-  from, to { border-color: transparent }
-  50% { border-color: var(--inactive) }
+@keyframes blink {
+  to {
+    background: transparent;
+  }
 }
 
 .hero h5 {
@@ -199,17 +201,43 @@ body {
   font-size: 2rem;
   margin-bottom: 1rem;
   text-align: center;
+  animation: slide-up 1s ease-out 1s forwards, fade-in 1s ease-out 1s forwards;
+  /* the forwards value will keep the final state of the animation */
+  opacity: 0; /* set initial opacity to 0 */
 }
 
 .home h1 {
-  color: var(--text);
   font-size: 10rem;
-  text-align: center;
-  overflow: hidden; /* Ensures the content is not revealed until the animation */
-  border-right: .9rem solid var(--inactive); /* The typwriter cursor */
-  white-space: nowrap; /* Keeps the content on a single line */
-  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
-  letter-spacing: 0.3rem; /* Adjust as needed */
+  position: relative;
+  letter-spacing: 5px;
+  /* width: max-content; */
+  color: var(--text);
+  /* background-color: #de8484; */
+   opacity: 0;
+}
+
+.home h1::before,
+.home h1::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.home h1::before {
+  background: var(--bg);
+  animation: typewriter var(--typewriterSpeed)
+    steps(var(--typewriterCharacters)) 1s forwards;
+}
+
+.home h1::after {
+  width: 0.125em;
+  background: var(--inactive);
+  animation: typewriter var(--typewriterSpeed)
+      steps(var(--typewriterCharacters)) 1s forwards,
+    blink 750ms steps(var(--typewriterCharacters)) infinite;
 }
 
 .hero h3 {
@@ -218,22 +246,6 @@ body {
   margin-top: 1rem;
   text-align: center;
   font-family: 'Apercu-R', sans-serif;
-}
-
-.home h1 {
-  animation: typing 2.0s steps(35, end), blink-caret .95s step-end infinite, fade-in 1s ease-out forwards;
-  /* the forwards value will keep the final state of the animation */
-  opacity: 0; /* set initial opacity to 0 */
-
-}
-
-.home h5 {
-  animation: slide-up 1s ease-out 1s forwards, fade-in 1s ease-out 1s forwards;
-  /* the forwards value will keep the final state of the animation */
-  opacity: 0; /* set initial opacity to 0 */
-}
-
-.home h3 {
   animation: slide-up 1s ease-out 1.5s forwards, fade-in 1s ease-out 1.5s forwards;
   /* the forwards value will keep the final state of the animation */
   opacity: 0; /* set initial opacity to 0 */
@@ -371,6 +383,7 @@ body {
     font-size: 4.7rem;
     margin-bottom: 2.5rem;
     text-align: center;
+    letter-spacing: 0.5rem;
   }
   
   .hero h3 br {
