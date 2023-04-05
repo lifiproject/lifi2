@@ -71,6 +71,10 @@ body {
   color: var(--navbartxt);
 }
 
+.navbar .a-logo {
+  text-decoration: none;
+} 
+
 .navbar {
   background-color: var(--bgnav);
   width: 100%;
