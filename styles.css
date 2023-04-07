@@ -25,6 +25,28 @@
   src: url("fonts/Apercu\ Light.otf");
 }
 
+::-webkit-scrollbar {
+  width: 2em;
+  height: 1em;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+  border-radius: 100vw;
+  margin-block: 0.5em;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #1b1b1fb3;
+  backdrop-filter: blur(5rem) saturate(150%);
+  /* border: 6px solid #111215; */
+  border: 6px solid var(--bg);
+  border-radius: 100vw;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--inactive);
+}
 
 * {
   padding: 0;
@@ -255,9 +277,9 @@ body {
 
 /* ---------- ABOUT PAGE ---------- */
 .about {
-  height: 90vh;
+  height: 100vh;
   position: relative;
-  padding-top: 5rem;
+  padding-top: 7rem;
 }
 
 .container{
@@ -305,7 +327,7 @@ body {
   z-index: 222;
   color: var(--dulltxt);
   background: #45464B3a;
-  backdrop-filter: blur(5rem) saturate(150%);;
+  backdrop-filter: blur(5rem) saturate(150%);
   padding: 40px;
   max-width: 400px;
   border: 3px solid #1A1B1F;
