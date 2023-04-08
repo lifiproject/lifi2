@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LiFi - Light Fidelity</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Climate+Crisis&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- NAVBAR SETTINGS -->
+  <header class="header">
+    <nav class="navbar">
+      <a class="a-logo" href="#"><h2 class="logo">LI<span>-FI</span>.</h2></a>
+      <ul class="navlist">
+        <li><a id="active" class="changeable" href="#home">Home</a></li>
+        <li><a class="changeable" href="#about">About</a></li>
+        <li><a class="changeable" href="#working">Working</a></li>
+        <li><a class="changeable" href="#uses">Uses</a></li>
+        <li class="lsticos"> <a href="https://www.instagram.com/ajeenkyadypatiluniversity/related_profiles/?hl=en" id="socials"><ion-icon name="logo-instagram"></ion-icon></a>
+          <a href="" id="socials"><ion-icon name="logo-linkedin"></ion-icon></a>
+          <a href="" id="socials"><ion-icon name="logo-github"></ion-icon></a></li>
+      </ul>
+      <div class="icos">
+        <a href="https://www.instagram.com/ajeenkyadypatiluniversity/related_profiles/?hl=en" id="socials"><ion-icon name="logo-instagram"></ion-icon></a>
+        <a href="" id="socials"><ion-icon name="logo-linkedin"></ion-icon></a>
+        <a href="https://github.com/lifiproject/lifi2" id="socials"><ion-icon name="logo-github"></ion-icon></a>
+      </div>
+      <div id="mobilenav">
+        <ion-icon name="menu-outline" class="navico"></ion-icon>
+        <ion-icon name="close-outline" class="navico"></ion-icon>
+      </div>
+    </nav>
+  </div>
+  </header>
+
+
+  <!-- LANDING PAGE -->
+  <section class="home" id="home">
+    <div class="hero">
+      <h5 class="welcome-msg">Welcome, to my project on</h5>
+      <h1 class="hero-title" id="typing-header"></h1>
+      <h3 class="hero-content">LiFi is a wireless communication technology that uses light to transmit data. Unlike traditional wireless<br> communication technologies like Wi-Fi and Bluetooth that use radio waves to transmit data, LiFi uses light-emitting<br> diodes (LEDs) to transmit information. LiFi has several advantages over traditional wireless<br> communication technologies. Continue to read to find more about LiFi.</h3>
+    </div>
+  </section>
+
+
+  <!-- ABOUT PAGE -->
+  <section class="about" id="about">
+    <div class="container">
+      <h2 id="about-title" class="main-title">Discovering Li-Fi.</h2>
+      <div class="content">
+        <div class="image">
+          <img src="images/lifi-tech.png" alt="lifi related image">
+        </div>
+        <div class="text-box">
+          <!-- <h3>Lorem Ipsum</h3> -->
+          <p>Li-Fi is a wireless communication technology which utilizes light to transmit data and position between devices. The term was first introduced by Harald Haas during a 2011 TED Global talk in Edinburgh. Li-Fi is a light communication system that is capable of transmitting data at high speeds over the visible light, ultraviolet, and infrared spectrums. In its present state, only LED lamps can be used for the transmission of data in visible light. In terms of its end user, the technology is similar to Wi-Fi.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Workings Section -->
+  <section class="working" id="working">
+    <div class="main">
+      <h1 id="w-title" >HOW DOES IT WORK?</h1>
+      <br> 
+      <div class="process-wrapper" id="process-wrpper">
+      <div id="progress-bar-container">
+        <ul>
+          <li class="step step01 active"><div class="step-inner">DATA ENCODING</div></li>
+          <li class="step step02"><div class="step-inner">LED MODULATION</div></li>
+          <li class="step step03"><div class="step-inner">TRANSMISSION</div></li>
+          <li class="step step04"><div class="step-inner">RECEPTION</div></li>
+          <li class="step step05"><div class="step-inner">DATA ENCODING</div></li>
+        </ul>
+        
+        <div id="line">
+          <div id="line-progress"></div>
+        </div>
+      </div>
+
+      <div id="progress-content-section">
+        <div class="section-content discovery active">
+          <h2>DATA ENCODING</h2>
+          <p>Data is first encoded into a format that can be transmitted using light waves. This is done by converting the data into binary code (0s and 1s). Then, the data is encoded into a series of light pulses, where each pulse corresponds to a 0 or a 1.</p>
+        </div>
+        
+        <div class="section-content strategy">
+          <h2>LED MODULATION</h2>
+          <p>The binary data is then modulated from the light from an LED bulb to encode the digital information. The LED bulb is turned on and off very rapidly (millions of times per second) in accordance with the encoded data. This process is called on-off keying (OOK) modulation. The light that is emitted from the LED bulb carries the encoded data in the form of a light pulse sequence.</p>
+        </div>
+        
+        <div class="section-content creative">
+          <h2>TRANSMISSION</h2>
+          <p>The modulated light signal is transmitted through the air, just like a traditional radio wave in WiFi. The light waves are received by a photodetector, which detects the changes in the light signal and converts them back into electrical signals that correspond to the encoded data.</p>
+        </div>
+        
+        <div class="section-content production">
+          <h2>RECEPTION</h2>
+          <p>The photodetector converts the light signal into electrical signals. These signals are then sent to a receiver that decodes the signals to extract the original digital data. The receiver may be a separate device or integrated into the photodetector.</p>
+        </div>
+        
+        <div class="section-content analysis">
+          <h2>DATA ENCODING</h2>
+          <p>The binary data is decoded back into its original digital format. This is done by reversing the encoding process that was done on the sender side. The receiver side data decoding involves converting the electrical signals received by the receiver into binary code, which is then converted back into the original digital data.</p>
+        </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- USES PAGE -->
+  <section class="uses" id="uses">
+    <div class="u-container">
+      <h2 id="uses-title" class="u-main-title">The Use Cases.</h2>
+      <div class="wrapper">
+        <div class="card" id="cr1">
+          <img src="images/houseuse.png">
+          <div class="card-body">
+            <h2 class="card-title">House Use</h2>
+            <p class="card-content">Li-Fi uses light waves to transmit data, offering fast and secure connectivity in smart homes.</p>
+            <button onclick="location.href='https://www.lifi-centre.com/about-li-fi/applications/'" class="card-btn">Read More</button>
+          </div>
+        </div>
+        <div class="card" id="cr2">
+          <img src="images/medicaluse.png">
+          <div class="card-body">
+            <h2 class="card-title">Medical Use</h2>
+            <p class="card-content">Li-Fi can replace Wi-Fi for medical equipments that cannot be used with radio waves.</p>
+            <button onclick="location.href='https://www.ijert.org/real-time-embedded-health-monitoring-system-using-li-fi'" class="card-btn">Read More</button>
+          </div>
+        </div>
+        <div class="card" id="cr3">
+          <img src="images/officeuse.png">
+          <div class="card-body">
+            <h2 class="card-title">Workspace Use</h2>
+            <p class="card-content">Imagine having your laptop or car exchange data with the office refrigerator or lights in real-time.</p>
+            <button onclick="location.href='https://lifi.co/news/lifi-in-offices-what-are-the-benefits/'" class="card-btn">Read More</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+<!-- FOOTER Section -->
+<footer>
+  <p>CopyRight © Prajwal. Made using HTML, CSS & JS</p>
+</footer>
+
+
+
+<!-- JS -->
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+<script src="https://unpkg.com/typeit@8.7.1/dist/index.umd.js"></script>
+<script src="https://unpkg.com/scrollreveal@4.0.5/dist/scrollreveal.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+
+<script src="main.js"></script>
+<script>
+  const sr = ScrollReveal({
+    reset: true,
+    distance: '60px',
+    duration: 1000,
+    delay: 500
+  });
+
+  // HERO
+  sr.reveal('.welcome-msg', {
+    delay: 500,
+    origin: 'right',
+    afterReveal: function(domEl) {
+      topic.go();
+    }
+  });
+  sr.reveal('.hero-title', {
+    delay: 1500,
+    origin: 'left',
+    afterReveal: function(domEl) {
+      content;
+    }
+  });
+  const content = sr.reveal('.hero-content', {
+    delay: 1900,
+    origin: 'bottom'
+  });
+
+  const topic = new TypeIt('#typing-header', {
+      speed: 70,
+      lifeLike: false,
+      loop: true,
+      loopDelay: 500,
+      waitUntilVisible: true,
+      cursor: false
+    })
+    .type("Light Fidelity.")
+    .pause(5000)
+    .delete(15)
+    .type("Li - Fi.")
+    .pause(5000)
+    .delete(8);
+
+
+  // ABOUT
+  sr.reveal('.image', {
+    delay: 1500,
+    origin: 'bottom'
+  });
+  sr.reveal('.content', {
+    delay: 1500,
+    origin: 'right'
+  });
+
+  new TypeIt('#about-title', {
+      speed: 70,
+      lifeLike: false,
+      waitUntilVisible: true,
+      cursor: false
+    })
+    .pause(500)
+    .go();
+
+
+    // WORKING
+    sr.reveal('.process-wrapper', {
+      delay: 1500,
+      origin: 'bottom'
+    });
+
+    new TypeIt('#w-title', {
+        speed: 70,
+        lifeLike: false,
+        waitUntilVisible: true,
+        cursor: false
+      })
+      .pause(500)
+      .go();
+
+    $(".step").click( function() {
+      $(this).addClass("active").prevAll().addClass("active");
+      $(this).nextAll().removeClass("active");
+    });
+
+    $(".step01").click( function() {
+      $("#line-progress").css("width", "3%");
+      $(".discovery").addClass("active").siblings().removeClass("active");
+    });
+
+    $(".step02").click( function() {
+      $("#line-progress").css("width", "25%");
+      $(".strategy").addClass("active").siblings().removeClass("active");
+    });
+
+    $(".step03").click( function() {
+      $("#line-progress").css("width", "50%");
+      $(".creative").addClass("active").siblings().removeClass("active");
+    });
+
+    $(".step04").click( function() {
+      $("#line-progress").css("width", "75%");
+      $(".production").addClass("active").siblings().removeClass("active");
+    });
+
+    $(".step05").click( function() {
+      $("#line-progress").css("width", "100%");
+      $(".analysis").addClass("active").siblings().removeClass("active");
+    });
+
+    // ABOUT
+    sr.reveal('#cr1', {
+      delay: 1500,
+      origin: 'bottom'
+    });
+    sr.reveal('#cr2', {
+      delay: 1700,
+      origin: 'bottom'
+    });
+    sr.reveal('#cr3', {
+      delay: 1900,
+      origin: 'bottom'
+    });
+
+
+  new TypeIt('#uses-title', {
+      speed: 70,
+      lifeLike: false,
+      waitUntilVisible: true,
+      cursor: false
+    })
+    .pause(500)
+    .go();
+
+</script>
+
+</body>
+</html>
